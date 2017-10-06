@@ -1,0 +1,20 @@
+
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Let Sing</string>
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="Song">Songs</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="Artist">Artist</string>
+    <string name="Genre">Genre</string>
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="Album">Album</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="Genere">Genere</string>
+    <string name="singer1">Shareen</string>
+    <string name="singer2">Justin Bieber</string>
+    <string name="singer3">Lamar</string>
+</resources>

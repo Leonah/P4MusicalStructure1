@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="bottom"
+    android:background="@android:color/white"
+
+    android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/MusicLabel"
+        style="@style/ButtonBar"
+        android:backgroundTint="@color/Transparent"
+        android:src="@drawable/music" />
+    <!--
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MusicLabel"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="12dp"
+        android:text="Songs"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+        -->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/artistLabel"
+        style="@style/ButtonBar"
+        android:layout_toRightOf="@id/MusicLabel"
+        android:backgroundTint="@color/Transparent"
+        android:src="@drawable/artist" />
+    <!--
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/artistLabel"
+                   android:layout_marginLeft="8dp"
+                   android:layout_toRightOf="@id/MusicLabel"
+                   android:fontFamily="sans-serif"
+                   android:paddingLeft="12dp"
+                   android:text="Artist"
+                   android:textSize="18sp"
+                   android:textStyle="bold" />
+                   -->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/albumLabel"
+        style="@style/ButtonBar"
+        android:layout_toRightOf="@id/artistLabel"
+        android:backgroundTint="@color/Transparent"
+        android:src="@drawable/album"
+
+        />
+    <!--
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/albumLabel"
+                   android:layout_marginLeft="8dp"
+                   android:layout_toRightOf="@id/artistLabel"
+                   android:fontFamily="sans-serif"
+                   android:paddingLeft="12dp"
+                   android:text="Album"
+                   android:textSize="18sp"
+                   android:textStyle="bold" />
+                   -->
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/ButtonBar"
+        android:backgroundTint="@color/Transparent"
+        android:id="@+id/playList"
+        android:layout_toRightOf="@id/albumLabel"
+        android:src="@drawable/playlist" />
+    <!--
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/Genre"
+                   android:layout_marginLeft="8dp"
+                   android:layout_toRightOf="@id/albumLabel"
+                   android:fontFamily="sans-serif"
+                   android:paddingLeft="12dp"
+                   android:text="Play List"
+                   android:textSize="18sp"
+                   android:textStyle="bold" />
+                   -->
+</android.support.v7.widget.Toolbar>
+
