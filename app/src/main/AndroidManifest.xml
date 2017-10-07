@@ -18,16 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Songs"
-            android:label="@string/Song">
-
-        </activity>
 
         <activity android:name=".Artist" />
         <activity android:name=".Album"></activity>
         <activity android:name=".Genre"></activity>
-        <activity android:name=".SecondActivity" />
+        <activity android:name=".Songs" />
     </application>
 
 
