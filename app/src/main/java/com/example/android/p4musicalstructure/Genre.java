@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -21,7 +22,7 @@ public class Genre extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_songs:
-                    Intent SongsPage = new Intent(getApplicationContext(), SecondActivity.class);
+                    Intent SongsPage = new Intent(getApplicationContext(), Songs.class);
                     startActivity(SongsPage);
                     return true;
                 case R.id.navigation_artist:
@@ -51,14 +52,14 @@ public class Genre extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         final ListView listview = (ListView) findViewById(R.id.genreList);
         TextView TvGenreMsg= (TextView) findViewById(R.id.genreMsg);
-        TvGenreMsg.setText("This activity list the genre of the Album, I have used ListView to populate possible genre");
+        TvGenreMsg.setText("This activity list the genre of the Album. I have used ListView to populate possible genre");
         String[] Songs = new String[]{"Pop Music", "Hip hop Music", "Reggaeton pop Music", "Electro, Alternative R&B" }; //DNA is Hip hop music
 
         final ArrayList<String> list = new ArrayList<String>();
         for (int i = 0; i < Songs.length; ++i) {
             list.add(Songs[i]);
         }
-        final StableArrayAdapter adapter = new StableArrayAdapter(this, android.R.layout.simple_list_item_1, list);
+        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
         listview.setAdapter(adapter);
     }
 

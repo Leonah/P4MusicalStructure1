@@ -16,7 +16,7 @@ public class Artist extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_songs:
-                    Intent SongsPage = new Intent(getApplicationContext(), SecondActivity.class);
+                    Intent SongsPage = new Intent(getApplicationContext(), Songs.class);
                     startActivity(SongsPage);
                     return true;
                 case R.id.navigation_artist:

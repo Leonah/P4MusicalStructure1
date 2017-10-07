@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
     }*/
 
     void openSongList(View view) {
-        Intent i = new Intent(this, SecondActivity.class);
+        Intent i = new Intent(this, Songs.class);
         // this.setTitle(findViewById(R.string.category_colors));
         startActivity(i);
     }

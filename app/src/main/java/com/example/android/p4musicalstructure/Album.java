@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -19,7 +20,7 @@ public class Album extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_songs:
-                    Intent SongsPage = new Intent(getApplicationContext(), SecondActivity.class);
+                    Intent SongsPage = new Intent(getApplicationContext(), Songs.class);
                     startActivity(SongsPage);
                     return true;
                 case R.id.navigation_artist:
@@ -58,7 +59,7 @@ public class Album extends AppCompatActivity {
         for (int i = 0; i < Songs.length; ++i) {
             list.add(Songs[i]);
         }
-        final StableArrayAdapter adapter = new StableArrayAdapter(this, android.R.layout.simple_list_item_1, list);
+        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
         listview.setAdapter(adapter);
     }
 
